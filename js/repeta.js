@@ -1,359 +1,674 @@
-// const add = function () {
-//   console.log(arguments);
-// };
-
-// add(1, 2, 3);
-// [1, 2, 3, 4, 5];
-// [1, 2, 3, 4, 5, 6, 7];
-
-// const message = 'Proin sociis natoque et magnis parturient montes mus';
-// console.log(message.length);
-// const masive = message.split('');
-// console.log(masive);
-// console.log(typeof masive[5]);
-// let total = 0;
-// for (let symbol of masive) {
-//   if (symbol === ' ') {
-//     total += 0;
-//   } else {
-//     total += 1;
-//   }
-// }
-// console.log(total);
-// /*
-
-// */
-
-// const friends = ['Proi', 'socis', 'nat', 'et', 'magn', 'pent', 'mones'];
-// for (let i = 0; i < friends.length; i += 1) {
-//   friends[i] += `-${i}`;
-// }
-// console.table(friends);
-
-// const calculateEngravingPrice = (message = '', pricePerWord = 0) =>
-//   message.split(' ').length * pricePerWord;
-
-// const message1 = 'Proi socis nat et magn pent mones';
-// const message2 = 'Proi socis nat et magn pent mones';
-// const message3 = 'Don orci lect aliqum est magi';
-// const message4 = 'Don orci lect aliqum est magi';
-// const price1 = 10;
-// const price2 = 20;
-// const price3 = 40;
-// const price4 = 20;
-
-// console.log(calculateEngravingPrice(message1, price1));
-// //
-// //
-// //
-// //
-// //
-// //
-// //
-// //
-// //
-// //
-// //
-// //
-// //
-// //
-// //
-// //
-// //
-// //
-// const getItemsString = function (array) {
-//   let result = '';
-//   for (let i = 0; i < array.length; i += 1) {
-//     result += `${i + 1} - ${array[i]}\n`;
-//   }
-//   return result;
-// };
-
-// console.log(getItemsString(array1));
-// //
-// const array1 = ['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong'];
-// const array2 = [5, 10, 15];
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// const cards = [
-//   'Карточка-1',
-//   'Карточка-2',
-//   'Карточка-3',
-//   'Карточка-4',
-//   'Карточка-5',
-// ];
-
-// console.table(cards);
-
 /*
- * Удаление (по индексу), метод indexOf()
+ * Объекты (делаем плейлист музыки: имя, рейтинг, треки, кол-во треков)
+ * - Литерал объекта
+ * - Свойства, ключи (имя) и значения
+ * - Как отличить объект от области видимости
  */
 
-// const cardToRemove = 'Карточка-3';
-// const index = cards.indexOf(cardToRemove);
-// console.log(index);
-
-// cards.splice(index, 1);
-
-// console.table(cards);
-
-/*
- * Добавление (по индексу)
- */
-// const cardToInsert = 'Карточка-6';
-// const index = 3;
-
-// cards.splice(index, 0, cardToInsert);
-// console.table(cards);
-
-/*
- * Обновление (по индексу)
- */
-// const cardToUpdate = 'Карточка-4';
-// const index = cards.indexOf(cardToUpdate);
-
-// console.log(index);
-
-// cards.splice(cards.indexOf(cardToUpdate), 1, 'Обновленная карточка-4');
-
-// console.table(cards);
-
-// const string = 'qWeRTzxCv';
-// const motto = 'WeaReThecaMpiOns';
-
-// const changeRegister = function (x) {
-//   let invertedString = '';
-
-//   for (const letter of x.split('')) {
-//     const isEqual = letter === letter.toLowerCase();
-//     invertedString += isEqual ? letter.toUpperCase() : letter.toLowerCase();
-//   }
-//   return console.log(invertedString);
+// const playlist = {
+//   name: 'Мой супер плейлист',
+//   rating: 5,
+//   tracks: ['трек-1', 'трек-2', 'трек-3'],
+//   trackCount: 3,
 // };
 
-// changeRegister(motto);
+// console.log(playlist);
 
-// if (letter === letter.toLowerCase()) {
-//   console.log('Эта буква в нижнем регистре!!! - ', letter);
+// const x = {};
 
-//   invertedString += letter.toUpperCase();
-// } else {
-//   console.log('Эта буква в верхнет регистре!!! - ', letter);
-//   invertedString += letter.toLowerCase();
-// }
-//
-//
-//
-//
-//
-//
-//
-
-// let say = 'London is the capital of Great Britain';
-// let string = 'We aRe The chaMpiOns';
-// let upResult = '';
-// const resultMassive = string.split(' ');
-// console.log(resultMassive);
-
-// for (let element of resultMassive) {
-//   //   console.log(element);
-//   let word = element.split('').join('');
-//   console.log(word);
-
-//   let resultWord = '';
-//   upResult += resultWord;
-
-//   for (let letter of word) {
-//     // console.log(letter);
-//     if (letter === letter.toLowerCase()) {
-//       //   console.log('low - ', letter);
-//       resultWord += letter.toUpperCase();
-//     } else {
-//       //   console.log('up - ', letter);
-//       resultWord += letter.toLowerCase();
-//     }
-//   }
-//   console.log(resultWord);
-// }
-// console.log(upResult);
-//
-//
-//
-//
-//
-//
-//
-//
-
-// const noSpace = function (x) {
-//   return x.split(' ').join('');
+// const fn = function (myObject) {
+//   // myObject = { a: 1, b: 2 }
+//   console.log(myObject);
 // };
-// console.log(noSpace(string));
 
-//
-//
-//
-//
-//
-//
-//
-//
-// const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
-// let string;
-// string = friends.join(',');
-// console.log(string);
+// fn({ a: 1, b: 2 });
 
-//
-//
-//
-//
-//
-//
+// const rtfm = function () {
+//   return { a: 5 };
+// };
 
-// let string = '';
+// console.log(rtfm());
 
-// for (let i = 0; i < friends.length; i += 1) {
-//   let friend = friends[i] + ',';
-//   console.log(friend);
-//   string += friend;
+/*
+ * Доступ к свойству
+ * - obj.key
+ * - obj['key']
+ * - Отсутствующие свойства
+ */
+
+const playlist = {
+  name: 'Мой супер плейлист',
+  rating: 5,
+  tracks: ['трек-1', 'трек-2', 'трек-3'],
+  trackCount: 3,
+};
+
+// playlist.qwe = 5;
+
+// playlist.rating = 10;
+
+// console.log(playlist);
+
+// console.log(playlist);
+// console.log(playlist.tracks);
+// console.log(playlist.name);
+// console.log(playlist.trackCount);
+
+const propertyName = 'tracks';
+
+// console.log(playlist.rating);
+// console.log(playlist['rating']);
+
+// console.log(playlist.propertyName);
+// console.log(playlist[propertyName]);
+
+/*
+ * Короткая запись свойств
+ */
+const username = 'Mango';
+const email = 'mango@mail.com';
+
+const signupData = {
+  username,
+  email,
+};
+
+// console.log(signupData);
+
+/*
+ * Вычисляемые свойства
+ */
+
+//  <input name="color" value="tomato" >
+
+const inputName = 'color';
+const inputValue = 'tomato';
+
+const colorPickerData = {
+  [inputName]: inputValue,
+};
+
+// console.log(colorPickerData);
+
+/*
+ * Ссылочный тип {} === {}
+ */
+
+// console.log({ a: 1 } === { a: 1 });
+// console.log([] === []);
+
+// const a = { x: 1, y: 2 };
+// const b = a;
+
+// console.log(b === a);
+
+// a.hello = 100;
+// b.hello = 150;
+
+// console.log(a);
+// console.log(b);
+
+/*
+ * Массивы и функции это объекты
+ */
+
+// const a = [1, 2, 3];
+
+// a.hello = ':)';
+
+// console.log(a);
+
+// const fn = function () {
+//   console.log('hello');
+// };
+
+// fn.hello = ';)';
+
+// console.dir(fn.hello);
+
+/*
+ * Методы объекта и this при обращении к свойствам в методах
+ *
+ * http://fecore.net.ua/books/m5ph3r-javascript/module-03/images/context.jpg
+ *
+ * - changeName
+ * - addTrack
+ * - updateRating
+ * - getTrackCount
+ */
+
+const playlist = {
+  name: 'Мой супер плейлист',
+  rating: 5,
+  tracks: ['трек-1', 'трек-2', 'трек-3'],
+  changeName(newName) {
+    console.log('this внутри changeName: ', this);
+
+    this.name = newName;
+  },
+  addTrack(track) {
+    this.tracks.push(track);
+  },
+  updateRating(newRating) {
+    this.rating = newRating;
+  },
+  getTrackCount() {
+    return this.tracks.length;
+  },
+};
+
+console.log(playlist.getTrackCount());
+
+playlist.changeName('Новое имя');
+
+playlist.addTrack('новый трек 1');
+console.log(playlist.getTrackCount());
+
+playlist.addTrack('новый трек 2');
+console.log(playlist.getTrackCount());
+
+playlist.updateRating(4);
+
+console.log(playlist);
+
+/*
+ * Перебор через for...in и Object.keys|values|entries
+ */
+
+const feedback = {
+  good: 5,
+  neutral: 10,
+  bad: 3,
+};
+
+let totalFeedback = 0;
+
+// const keys = Object.keys(feedback);
+
+// console.log(keys);
+
+// for (const key of keys) {
+//   console.log(key);
+//   console.log(feedback[key]);
+
+//   totalFeedback += feedback[key];
 // }
-// console.log(string.length);
-// string = string.slice(0, string.length - 1);
-// console.log(string);
-// console.log(string.length);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// const numbers = [51, 18, 13, 24, 7, 85, 19];
-// let biggestNumber = numbers[0];
 
-// for (const number of numbers) {
-//   if (number > biggestNumber) {
-//     biggestNumber = number;
-//   }
+// console.log('totalFeedback: ', totalFeedback);
+
+const values = Object.values(feedback);
+
+// console.log(values);
+
+// for (const value of values) {
+//   console.log(value);
+
+//   totalFeedback += value;
 // }
 
-// console.log('biggestNumber: ', biggestNumber);
+// console.log('totalFeedback: ', totalFeedback);
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/*
+ * Работа с коллекцией (массивом объектов)
+ */
+const friends = [
+  { name: 'Mango', online: false },
+  { name: 'Kiwi', online: true },
+  { name: 'Poly', online: false },
+  { name: 'Ajax', online: false },
+];
 
-// const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3m4n'];
-// const loginToFind = 'poly1scute';
-// let message;
-//
-// можна так
-// for (let login of logins) {
-//   if (logins.includes(loginToFind)) {
-//     console.log('luck');
-//     message = `Пользователь ${loginToFind} найден.`;
-//     break;
-//   }
+console.table(friends);
+
+/*
+ * Ищем друга по имени
+ */
+
+const findFriendByName = function (allFriends, friendName) {
+  for (const friend of allFriends) {
+    // console.log(friend);
+    // console.log(friend.name);
+
+    if (friend.name === friendName) {
+      return 'НАШЛИ!!!';
+    }
+  }
+
+  return 'НЕ НАШЛИ :(';
+};
+
+// console.log(findFriendByName(friends, 'Poly'));
+// console.log(findFriendByName(friends, 'Chelsy'));
+
+/*
+ * Получаем имена всех друзей
+ */
+
+const getAllNames = function (allFriends) {
+  const names = [];
+
+  for (const friend of allFriends) {
+    console.log(friend.name);
+
+    names.push(friend.name);
+  }
+
+  return names;
+};
+
+// console.log(getAllNames(friends));
+
+/*
+ * Получаем имена только друзей которые онлайн
+ */
+const getOnlineFriends = function (allFriends) {
+  const onlineFriends = [];
+
+  for (const friend of allFriends) {
+    console.log(friend);
+    console.log(friend.online);
+
+    if (friend.online) {
+      onlineFriends.push(friend);
+    }
+  }
+
+  return onlineFriends;
+};
+
+// console.log(getOnlineFriends(friends));
+
+const getOfflineFriends = function (allFriends) {
+  const offlineFriends = [];
+
+  for (const friend of allFriends) {
+    console.log(friend.online);
+
+    if (!friend.online) {
+      offlineFriends.push(friend);
+    }
+  }
+
+  return offlineFriends;
+};
+
+// console.log(getOfflineFriends(friends));
+
+// создать 2 массива онлайн и офлайн?
+// если тру - в первый, если нет - во второй
+
+const getFriendsByStatus = function (allFriends) {
+  const friendsByStatus = {
+    online: [],
+    offline: [],
+  };
+
+  for (const friend of allFriends) {
+    if (friend.online) {
+      friendsByStatus.online.push(friend);
+      continue;
+    }
+
+    friendsByStatus.offline.push(friend);
+
+    // const key = friend.online ? 'online' : 'offline';
+    // friendsByStatus[key].push(friend);
+  }
+
+  return friendsByStatus;
+};
+
+console.log(getFriendsByStatus(friends));
+
+/*
+ * Операция spread (распыление)
+ * - Array.prototype.concat() и аналог через spread
+ */
+
+// const numbers = [1, 2, 3].concat([4, 5, 6], [7, 8, 9]);
+
+const numbers = [
+  1000,
+  ...[1, 2, 3],
+  5000,
+  ...[4, 5, 6],
+  7000,
+  ...[7, 8, 9],
+  9000,
+];
+
+// console.log(numbers);
+
+/*
+ * Поиск самой маленькой или большой температуры (числа)
+ */
+const temps = [18, 14, 12, 21, 17, 29, 24];
+
+// console.log(Math.max(1, 4, 17, 5, 6));
+// console.log(Math.min(...temps));
+// console.log(temps);
+
+// const a = [{ x: 1 }, { y: 2 }, { z: 3 }];
+
+// const b = [...a];
+
+// console.log('a: ', a);
+// console.log('b: ', b);
+
+// console.log(a[0] === b[0]);
+// console.log(a === b);
+
+// a[0].x = 1000;
+
+// console.log('a: ', a);
+// console.log('b: ', b);
+
+/*
+ * Сшиваем несколько массивов в один через concat() и spread
+ */
+const lastWeekTemps = [1, 2, 3];
+const currentTemps = [4, 5, 6];
+const nextWeekTemps = [7, 8, 9];
+
+const allTemps = [...lastWeekTemps, ...currentTemps, ...nextWeekTemps];
+// console.log(allTemps);
+
+/*
+ * Распыление объектов
+ * - Object.prototype.assign() и spread
+ */
+const a = { x: 1, y: 2 };
+const b = { x: 0, z: 3 };
+
+// const c = Object.assign({name: 'Mango' }, a, b);
+
+const c = {
+  ...a,
+  x: 10,
+  ...b,
+  y: 20,
+};
+
+// console.log(c);
+
+const defaultSettings = {
+  theme: 'light',
+  showNotifications: true,
+  hideSidebar: false,
+};
+
+const userSettings = {
+  showNotifications: false,
+  hideSidebar: true,
+};
+
+const finalSettings = {
+  ...defaultSettings,
+  ...userSettings,
+};
+
+console.log(finalSettings);
+
+/*
+ * Деструктуризация объекта
+ * - Значения по умолчанию
+ * - Имя переменной отличное от имени свойства
+ */
+
+const playlist = {
+  name: 'Мой супер плейлист',
+  rating: 5,
+  tracks: ['трек-1', 'трек-2', 'трек-3'],
+  trackCount: 3,
+};
+
+// const {
+//   rating,
+//   tracks,
+//   name,
+//   trackCount: numberOfTracks = 0,
+//   author = 'user',
+// } = playlist;
+
+// console.log(numberOfTracks);
+
+/*
+ * Глубокая деструктуризация
+ */
+
+// const profile = {
+//   name: 'Jacques Gluke',
+//   tag: 'jgluke',
+//   location: 'Ocho Rios, Jamaica',
+//   avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/r_oy/128.jpg',
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308,
+//   },
+// };
+
+// const {
+//   avatar,
+//   name,
+//   tag,
+//   location,
+//   stats: { followers, views, likes },
+// } = profile;
+
+// console.log(name, tag, location, avatar, followers, views, likes);
+
+/*
+ * Деструктуризация массивов
+ */
+
+const rgb = [255, 100, 80];
+
+const [red, green, blue] = rgb;
+
+// console.log(red, green, blue);
+
+const authors = {
+  kiwi: 4,
+  poly: 7,
+  ajax: 9,
+  mango: 6,
+};
+
+const entries = Object.entries(authors);
+
+// console.log(entries);
+
+// for (const [name, rating] of entries) {
+//   // ур2
+//   // const [name, rating] = entry;
+
+//   // ур1
+//   // const name = entry[0];
+//   // const rating = entry[1];
+
+//   console.log(name, rating);
 // }
-//
-// но лучше так
-// let messageN = `Пользователь ${loginToFind} не найден.`;
-// let messageY = `Пользователь ${loginToFind} найден.`;
-// message = logins.includes(loginToFind) ? messageY : messageN;
 
-// console.log(message);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/*
+ * Операция rest (сбор)
+ */
+// const profile = {
+//   name: 'Jacques Gluke',
+//   tag: 'jgluke',
+//   location: 'Ocho Rios, Jamaica',
+//   avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/r_oy/128.jpg',
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308,
+//   },
+// };
 
-// const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 11];
-// let evenTotal = 0;
+// const { name, tag, location, ...restProps } = profile;
 
-// for (let i = 0; i < numbers.length; i += 1) {
-//   if (numbers[i] % 2 !== 0) {
-//     continue;
-//   } else {
-//     console.log(numbers[i]);
-//     evenTotal += numbers[i];
-//   }
-// }
-// console.log('Сумма = ', evenTotal);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+// console.log(name, tag, location);
+// console.log(restProps);
+// console.log(profile);
 
-// const cart = [12, 45, 23, 56, 76, 8, 3];
+/*
+ * Паттерн «Обьект настроек»
+ * - деструктуризация параметра-обьекта в подписи функции
+ * - rest при деструктуризации в подписи
+ */
 
-// let total = 0;
-// console.table(cart);
-// // for (let i = 0; i < cart.length; i += 1) {
-// //   console.log(cart[i]);
-// //   total += cart[i];
-// // }
-// for (let value of cart) {
-//   total += value;
-// }
+const showProfileInfo = function (userProfile) {
+  const { name, tag, location, ...restProps } = userProfile;
 
-// console.log(total);
+  // console.log(name, tag, location, avatar, followers, views, likes);
+  console.log(restProps);
+};
+
+const profile = {
+  name: 'Jacques Gluke',
+  tag: 'jgluke',
+  location: 'Ocho Rios, Jamaica',
+  avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/r_oy/128.jpg',
+  stats: {
+    followers: 5603,
+    views: 4827,
+    likes: 1308,
+  },
+};
+
+showProfileInfo(profile);
+
+const profile = {
+  name: 'Jacques Gluke',
+  tag: 'jgluke',
+  location: 'Ocho Rios, Jamaica',
+  avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/r_oy/128.jpg',
+  stats: {
+    followers: 5603,
+    views: 4827,
+    likes: 1308,
+  },
+};
+
+const makeProfileMarkup = function (userProfile) {
+  const {
+    avatar = 'https://i.pravatar.cc/400?img=6',
+    name,
+    tag,
+    location = 'Planet Earth',
+    stats: { followers, views, likes },
+  } = userProfile;
+
+  return `<div>
+    <img src="${avatar}" alt="user avatar">
+    <p>${name}<span>@${tag}</span></p>
+    <p>Location: ${location}</p>
+    <ul>
+      <li>Followers: ${followers}</li>
+      <li>Views: ${views}</li>
+      <li>Likes: ${likes}</li>
+    </ul>
+  </div>`;
+};
+
+const markup = makeProfileMarkup(profile);
+
+console.log(markup);
+
+document.body.insertAdjacentHTML('afterbegin', markup);
+
+/*
+ * Работем с коллекцией товаров в корзине:
+ * - getItems()
+ * - add(product)
+ * - remove(productName)
+ * - clear()
+ * - countTotalPrice()
+ * - increaseQuantity(productName)
+ * - decreaseQuantity(productName)
+ *
+ * { name: '🍎', price: 50 }
+ * { name: '🍇', price: 70 }
+ * { name: '🍋', price: 60 }
+ * { name: '🍓', price: 110 }
+ */
+
+const cart = {
+  items: [],
+  getItems() {
+    return this.items;
+  },
+  add(product) {
+    for (const item of this.items) {
+      if (item.name === product.name) {
+        item.quantity += 1;
+        return;
+      }
+    }
+
+    const newProduct = {
+      ...product,
+      quantity: 1,
+    };
+
+    this.items.push(newProduct);
+  },
+  remove(productName) {
+    const { items } = this;
+
+    for (let i = 0; i < items.length; i += 1) {
+      const item = items[i];
+
+      if (productName === item.name) {
+        console.log('нашли такой продукт ', productName);
+        console.log('индекс: ', i);
+
+        items.splice(i, 1);
+      }
+    }
+  },
+  clear() {
+    this.items = [];
+  },
+  countTotalPrice() {
+    const { items } = this;
+    let total = 0;
+
+    for (const { price, quantity } of items) {
+      total += price * quantity;
+    }
+
+    return total;
+  },
+  increaseQuantity(productName) {},
+  decreaseQuantity(productName) {},
+};
+
+console.log(cart.getItems());
+
+cart.add({ name: '🍎', price: 50 });
+cart.add({ name: '🍇', price: 60 });
+cart.add({ name: '🍋', price: 60 });
+cart.add({ name: '🍋', price: 60 });
+cart.add({ name: '🍓', price: 110 });
+cart.add({ name: '🍓', price: 110 });
+cart.add({ name: '🍓', price: 110 });
+
+console.table(cart.getItems());
+
+console.log('Total: ', cart.countTotalPrice());
+
+cart.remove('🍇');
+console.table(cart.getItems());
+
+// cart.clear();
+// console.log(cart.getItems());
+
+console.log('Total: ', cart.countTotalPrice());
+
+// cart.increaseQuantity('🍎');
+// console.table(cart.getItems());
+
+// cart.decreaseQuantity('🍋');
+// cart.decreaseQuantity('🍋');
+// console.table(cart.getItems());
