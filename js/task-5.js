@@ -8,6 +8,14 @@
 function getAllPropValues(array, prop) {
   'use strict';
   // Write code under this line
+  let result = [];
+
+  for (const key of array) {
+    if (prop in key) {
+      result.push(key[prop]);
+    }
+  }
+  return result;
 }
 
 // Объекты и ожидаемый результат
